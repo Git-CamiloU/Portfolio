@@ -1,0 +1,475 @@
+/* Para todos los elementos en la página: espaciado interno y externo, margenes de 10 y sin padding */
+* {
+    box-sizing: border-box;
+    margin: 10;
+    padding: 0;
+}
+
+/* Edición del fondo y fuente de la página */
+body {
+    color: white;
+    background: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* SECCIÓN CONTAINER */ /* SECCIÓN CONTAINER */ /* SECCIÓN CONTAINER */
+/* Para todos los elementos con etiquetado 'container': ocupar 80% de espacio y centrado */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* SECCIÓN BANNER SUPERIOR */ /* SECCIÓN BANNER SUPERIOR */ /* SECCIÓN BANNER SUPERIOR */
+/* Edición del banner superior (el banner superior está etiquetado como 'top-banner') */
+.top-banner {
+    height: 100px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+/* SECCIÓN PANEL DE NAVEGACIÓN */ /* SECCIÓN PANEL DE NAVEGACIÓN */ /* SECCIÓN PANEL DE NAVEGACIÓN */
+/* Edición del panel de navegación: (el panel está etiquetado como 'nav-main') */
+.nav-main{
+    height: 70px;                      /* Altura del panel de navegación de 50 píxeles */
+    font-size: 20px;                   /* Tamaño de fuente 20 */
+    background: black;               /* Color de fondo del panel de navegación */
+    display: flex;                     /* Ubicar elementos uno al lado del otro (imagen y marcadores) */
+    align-items: center;               /* Alinea los elementos en un eje horizontal */
+    justify-content: center;           /* Utilizar todo el ancho disponible */
+}
+/* Edición del tamaño del logo del panel de navegación (la imagen está etiquetada como 'nav-brand') */
+.nav-brand {
+    width: 110px;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Para todos los elementos con etiqueta 'ul': eliminar los estilos por defecto */
+ul {
+    list-style: none;
+}
+/* Para todas los elementos con etiqueta 'a': color blanco y sin subrayado */
+a {
+    color: white;
+    text-decoration: none;
+}
+/* Ubicar marcadores del panel de navegación uno al lado del otro (los marcadores están etiquetados como 'nav-main' y están dentro de un 'ul') */
+.nav-main ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Insertar espacio entre cada marcador del panel de navegación */
+.nav-main ul li {
+    padding: 40px;
+}
+/* Estilizar botones del panel de navegación para que muestren una animación al pasar sobre ellos */
+.nav-main ul li a:hover {
+    border-bottom: 2px solid white;
+}
+/* Aplicar márgenes a la barra separadora que está entre la barra de navegación y el banner */
+hr {
+    margin: 10px 0px;
+    background: black;
+}
+
+/* SECCIÓN BANNER PRINCIPAL */ /* SECCIÓN BANNER PRINCIPAL */ /* SECCIÓN BANNER PRINCIPAL */
+/* Edición del banner principal (el banner está etiquetado como 'banner') */
+.banner {
+    width: 100%;
+    height: 250px;
+    background: url(img/Images/Fondo\ -\ Work\ 3.jpg) no-repeat center center/cover;
+    padding: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+/* Edición del botón del banner principal con texto 'Leer más' etiquetado como 'btn' */
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    font-size: 15px;
+    border: 1px solid white;
+    margin: 0px 0px;
+}
+/* Cambiar la opacidad del botón 'Leer más' etiquetado como 'btn' */
+.btn:hover {
+    opacity: .79;
+}
+/* Espaciado inferior para el título y el texto del banner */ 
+.banner h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* SECCIÓN CARDS */ /* SECCIÓN CARDS */ /* SECCIÓN CARDS */
+/* Crear columnas y aplicar espaciado */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+/* Edición del tamaño de las imágenes */
+.cards img {
+    width: 100%;
+    height: 210px;
+}
+.cards-text{
+    background: rgb(255, 225, 179);
+}
+/* Edición del del texto h3 */
+.cards h3 {
+    color: black;
+    font-size: 20px;
+    margin-top: 5px;
+}
+/* Edición del del texto p */
+.cards p {
+    color: black;
+    margin-bottom:3px;
+}
+/* Edición del botón con texto 'Leer más' de las cartas principales */
+.cards a { 
+    padding: 10px 0;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    text-transform: uppercase;
+}
+/* Estilizar botones de las cartas principales para que muestren una animación al pasar sobre ellos */
+.cards a:hover {
+    text-decoration: underline; 
+}
+
+/* SECCIÓN SOCIAL MEDIA */ /* SECCIÓN SOCIAL MEDIA */ /* SECCIÓN SOCIAL MEDIA */
+.social {
+    color: white;
+    background: black;
+    margin-bottom: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.social p {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links a{
+    margin: 0 30px;
+}
+.links a i{
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Ajuste de la pantalla para visualización en celulares con ancho de menos de 800 píxeles */
+@media (max-width: 800px) {
+    .nav-main{
+        padding: 20px;
+    }
+    .banner{
+        margin-bottom: 25px;
+    }
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cards h3{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .cards p{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .cards a{
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+    .social {
+        color: white;
+        background: black;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: 38px;
+        margin-right: 38px;
+    }
+}
+
+/* Ajuste de la pantalla para visualización en celulares con ancho de menos de 500 píxeles */
+@media (max-width: 550px) {
+    .nav-main{
+        padding: 0px;
+    }
+    .banner{
+        margin-bottom: 50px;
+    }
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .cards h3{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .cards p{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .cards a{
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+    .social {
+        color: white;
+        background: black;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: 25.5px;
+        margin-right: 25.5px;
+    }
+}
+
+/* ANIMACIONES */ /* ANIMACIONES */ /* ANIMACIONES */
+.top-banner
+h1 {
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+    @keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+.nav-menu
+a {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+    @keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+.social
+p {
+    animation-duration: 2.5s;
+    animation-name: slidein;
+}
+    @keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+/* SECCIÓN CONTENIDO */ /* SECCIÓN CONTENIDO */ /* SECCIÓN CONTENIDO */
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+}
+.content-s1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-s1 ul {
+    display: flex;
+}
+.content-line {
+    width: 5px;
+    height: 170px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.content-text h1 {
+    color: black;
+    display: flex;
+    align-items: initial;
+    justify-content: center;
+    margin-left: 45px;
+    margin-bottom: 50px;
+}
+.content-text p {
+    color: black;
+    display: flex;
+    align-items: inherit;
+    justify-content: center;
+}
+.content-s2 {
+    color: black;
+    font-size: 20px;
+    margin-top: 24px;
+}
+
+/* SECCIÓN CONTENIDO (STUDIES) */ /* SECCIÓN CONTENIDO (STUDIES) */ /* SECCIÓN CONTENIDO (STUDIES) */
+.studies-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+}
+.studies-content-s1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.studies-content-s1 ul {
+    display: flex;
+}
+.studies-content-line {
+    width: 5px;
+    height: 170px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+.studies-content-text h1 {
+    color: black;
+    display: flex;
+    align-items: initial;
+    justify-content: left;
+    margin-bottom: 50px;
+}
+.studies-content-text p {
+    color: black;
+    display: flex;
+    align-items: inherit;
+    justify-content: left;
+}
+.studies-content-text h1 p {
+    margin-left: 30px;
+}
+.studies-content-s2 {
+    color: black;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* SECCIÓN CONTENIDO (PROJECTS) */ /* SECCIÓN CONTENIDO (PROJECTS) */ /* SECCIÓN CONTENIDO (PROJECTS) */
+.projects-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+}
+.projects-content-s1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projects-content-s1 ul {
+    display: flex;
+}
+.projects-content-line {
+    width: 5px;
+    height: 170px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+.projects-content-text h1 {
+    color: black;
+    display: flex;
+    align-items: initial;
+    justify-content: left;
+    margin-bottom: 30px;
+}
+.projects-content-text p {
+    color: black;
+    display: flex;
+    align-items: inherit;
+    justify-content: left;
+}
+.projects-content-text h1 p {
+    margin-left: 30px;
+}
+.projects-content-s2 {
+    color: black;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+/* SECCIÓN CONTENIDO (SOCIAL) */ /* SECCIÓN CONTENIDO (SOCIAL) */ /* SECCIÓN CONTENIDO (SOCIAL) */
+.social-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+}
+.social-content-s1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-content-s1 ul {
+    display: flex;
+}
+.social-content-line {
+    width: 5px;
+    height: 170px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+.social-content-text h1 {
+    color: black;
+    display: flex;
+    align-items: initial;
+    justify-content: left;
+    margin-bottom: 30px;
+}
+.social-content-text p {
+    color: black;
+    display: flex;
+    align-items: inherit;
+    justify-content: left;
+}
+.social-content-text h1 p {
+    margin-left: 30px;
+}
+.social-content-s2 {
+    color: black;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
