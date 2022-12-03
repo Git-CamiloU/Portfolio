@@ -1,3 +1,3 @@
 ScrollReveal().reveal('.banner');
-ScrollReveal().reveal('.cards');
+ScrollReveal().reveal('.content');
 ScrollReveal().reveal('.social');

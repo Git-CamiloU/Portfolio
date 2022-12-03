@@ -1,4 +1,4 @@
-/* Para todos los elementos en la página: espaciado interno y externo, margenes de 10 y sin padding */
+/* Para todos los elementos en la página: espaciado interno y externo, margenes de 10 y sin espaciado entre elementos */
 * {
     box-sizing: border-box;
     margin: 10;
@@ -27,28 +27,23 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin-bottom: 20px;
     text-decoration: underline;
+    margin-bottom: 20px;
 }
 
 /* SECCIÓN PANEL DE NAVEGACIÓN */ /* SECCIÓN PANEL DE NAVEGACIÓN */ /* SECCIÓN PANEL DE NAVEGACIÓN */
-/* Edición del panel de navegación: (el panel está etiquetado como 'nav-main') */
+/* Edición del panel de navegación: (el panel de navegación está etiquetado como 'nav-main') */
 .nav-main{
-    height: 70px;                      /* Altura del panel de navegación de 50 píxeles */
-    font-size: 20px;                   /* Tamaño de fuente 20 */
+    height: 70px;                      /* Altura del panel de navegación de 70 píxeles */
+    font-size: 20px;                   /* Tamaño de fuente 20 píxeles */
     background: black;               /* Color de fondo del panel de navegación */
     display: flex;                     /* Ubicar elementos uno al lado del otro (imagen y marcadores) */
     align-items: center;               /* Alinea los elementos en un eje horizontal */
-    justify-content: center;           /* Utilizar todo el ancho disponible */
+    justify-content: center;           /* Justificar contenido */
 }
 /* Edición del tamaño del logo del panel de navegación (la imagen está etiquetada como 'nav-brand') */
 .nav-brand {
     width: 110px;
-}
-.nav-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 /* Para todos los elementos con etiqueta 'ul': eliminar los estilos por defecto */
 ul {
@@ -59,13 +54,13 @@ a {
     color: white;
     text-decoration: none;
 }
-/* Ubicar marcadores del panel de navegación uno al lado del otro (los marcadores están etiquetados como 'nav-main' y están dentro de un 'ul') */
+/* Ubicar marcadores del panel de navegación uno al lado del otro (los marcadores están etiquetados como 'nav-main') */
 .nav-main ul {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-/* Insertar espacio entre cada marcador del panel de navegación */
+/* Insertar espaciado entre cada marcador del panel de navegación */
 .nav-main ul li {
     padding: 40px;
 }
@@ -80,17 +75,17 @@ hr {
 }
 
 /* SECCIÓN BANNER PRINCIPAL */ /* SECCIÓN BANNER PRINCIPAL */ /* SECCIÓN BANNER PRINCIPAL */
-/* Edición del banner principal (el banner está etiquetado como 'banner') */
+/* Edición del banner principal (el banner principal está etiquetado como 'banner') */
 .banner {
     width: 100%;
     height: 250px;
     background: url(img/Images/Fondo\ -\ Work\ 3.jpg) no-repeat center center/cover;
     padding: 50px;
-    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    margin-bottom: 20px;
 }
 /* Edición del botón del banner principal con texto 'Leer más' etiquetado como 'btn' */
 .btn {
@@ -127,6 +122,7 @@ hr {
     width: 100%;
     height: 210px;
 }
+/* Edición del color de fondo de las cartas */
 .cards-text{
     background: rgb(255, 225, 179);
 }
@@ -155,6 +151,7 @@ hr {
 }
 
 /* SECCIÓN SOCIAL MEDIA */ /* SECCIÓN SOCIAL MEDIA */ /* SECCIÓN SOCIAL MEDIA */
+/* Edición de la sección de social media: (color de fuente, color de fondo y márgenes) */
 .social {
     color: white;
     background: black;
@@ -162,26 +159,31 @@ hr {
     margin-left: 150px;
     margin-right: 150px;
 }
+/* Edición del texto 'p' de social media: (color y tamaño de fuente, alineación y márgenes) */
 .social p {
     color: white;
-    text-align: center;
     font-size: 30px;
+    text-align: center;
     margin-bottom: 20px;
 }
+/* Edición de los botones de social media: (alineación) */
 .links {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.links a{
+/* Edición del texto 'a' de social media: (márgenes) */
+.links a {
     margin: 0 30px;
 }
-.links a i{
+/* Edición de los textos 'a', 'i' de social media: (color y tamaño de fuente y márgenes) */
+.links a i {
     color: white;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
+/* OPTIMIZACIÓN PARA VISUALIZACIÓN EN CELULARES */
 /* Ajuste de la pantalla para visualización en celulares con ancho de menos de 800 píxeles */
 @media (max-width: 800px) {
     .nav-main{
@@ -249,6 +251,7 @@ hr {
 }
 
 /* ANIMACIONES */ /* ANIMACIONES */ /* ANIMACIONES */
+/* Animaciones para la sección 'top-banner' */
 .top-banner
 h1 {
     animation-duration: 2s;
@@ -264,6 +267,7 @@ h1 {
         width: 100%;
     }
 }
+/* Animaciones para la sección 'nav-menu' */
 .nav-menu
 a {
     animation-duration: 3s;
@@ -279,6 +283,7 @@ a {
         width: 100%;
     }
 }
+/* Animaciones para la sección 'social' */
 .social
 p {
     animation-duration: 2.5s;
