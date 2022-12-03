@@ -22,13 +22,13 @@ body {
 /* SECCIÓN BANNER SUPERIOR */ /* SECCIÓN BANNER SUPERIOR */ /* SECCIÓN BANNER SUPERIOR */
 /* Edición del banner superior (el banner superior está etiquetado como 'top-banner') */
 .top-banner {
-    height: 100px;
+    height: 50px;
     color: black;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: flex-start;
     text-decoration: underline;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 /* SECCIÓN PANEL DE NAVEGACIÓN */ /* SECCIÓN PANEL DE NAVEGACIÓN */ /* SECCIÓN PANEL DE NAVEGACIÓN */
@@ -121,6 +121,7 @@ hr {
 .cards img {
     width: 100%;
     height: 210px;
+    margin-bottom: 10px;
 }
 /* Edición del color de fondo de las cartas */
 .cards-text{
@@ -301,19 +302,23 @@ p {
 }
 
 /* SECCIÓN CONTENIDO */ /* SECCIÓN CONTENIDO */ /* SECCIÓN CONTENIDO */
+/* Dividir la sección de contenido en 2 columnas */
 .content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 30px;
 }
+/* Centrar el contenido de la sección 1 */
 .content-s1 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+/* Flexionar el contenido de la sección 1 en la lista 'ul' */
 .content-s1 ul {
     display: flex;
 }
+/* Ajustar la línea lateral de la sección 1 */
 .content-line {
     width: 5px;
     height: 170px;
@@ -322,6 +327,7 @@ p {
     justify-content: center;
     margin-bottom: 10px;
 }
+/* Ajustar el texto 'h1' de la sección 1 (ubicarlo en la parte superior de la sección y centrado) */
 .content-text h1 {
     color: black;
     display: flex;
@@ -330,12 +336,14 @@ p {
     margin-left: 45px;
     margin-bottom: 50px;
 }
+/* Ajustar el texto 'p' de la sección 1 (ubicarlo en la parte inferior de la sección y centrado) */
 .content-text p {
     color: black;
     display: flex;
     align-items: inherit;
     justify-content: center;
 }
+/* Ajustar la sección 2 */
 .content-s2 {
     color: black;
     font-size: 20px;
@@ -343,19 +351,23 @@ p {
 }
 
 /* SECCIÓN CONTENIDO (STUDIES) */ /* SECCIÓN CONTENIDO (STUDIES) */ /* SECCIÓN CONTENIDO (STUDIES) */
+/* Dividir la sección de contenido en 2 columnas */
 .studies-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 30px;
 }
+/* Centrar el contenido de la sección 1 */
 .studies-content-s1 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+/* Flexionar el contenido de la sección 1 en la lista 'ul' */
 .studies-content-s1 ul {
     display: flex;
 }
+/* Ajustar la línea lateral de la sección 1 */
 .studies-content-line {
     width: 5px;
     height: 170px;
@@ -365,6 +377,7 @@ p {
     margin-right: 30px;
     margin-bottom: 10px;
 }
+/* Ajustar el texto 'h1' de la sección 1 (ubicarlo en la parte superior de la sección y centrado) */
 .studies-content-text h1 {
     color: black;
     display: flex;
@@ -372,15 +385,18 @@ p {
     justify-content: left;
     margin-bottom: 50px;
 }
+/* Ajustar el texto 'p' de la sección 1 (ubicarlo en la parte inferior de la sección y centrado) */
 .studies-content-text p {
     color: black;
     display: flex;
     align-items: inherit;
     justify-content: left;
 }
+/* Aplicar márgenes a los textos 'h1' y 'p' de la sección 1 */
 .studies-content-text h1 p {
     margin-left: 30px;
 }
+/* Ajustar la sección 2 */
 .studies-content-s2 {
     color: black;
     font-size: 20px;
@@ -388,19 +404,23 @@ p {
 }
 
 /* SECCIÓN CONTENIDO (PROJECTS) */ /* SECCIÓN CONTENIDO (PROJECTS) */ /* SECCIÓN CONTENIDO (PROJECTS) */
+/* Dividir la sección de contenido en 2 columnas */
 .projects-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 30px;
 }
+/* Centrar el contenido de la sección 1 */
 .projects-content-s1 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+/* Flexionar el contenido de la sección 1 en la lista 'ul' */
 .projects-content-s1 ul {
     display: flex;
 }
+/* Ajustar la línea lateral de la sección 1 */
 .projects-content-line {
     width: 5px;
     height: 170px;
@@ -410,6 +430,7 @@ p {
     margin-right: 30px;
     margin-bottom: 10px;
 }
+/* Ajustar el texto 'h1' de la sección 1 (ubicarlo en la parte superior de la sección y centrado) */
 .projects-content-text h1 {
     color: black;
     display: flex;
@@ -417,15 +438,18 @@ p {
     justify-content: left;
     margin-bottom: 30px;
 }
+/* Ajustar el texto 'p' de la sección 1 (ubicarlo en la parte inferior de la sección y centrado) */
 .projects-content-text p {
     color: black;
     display: flex;
     align-items: inherit;
     justify-content: left;
 }
+/* Aplicar márgenes a los textos 'h1' y 'p' de la sección 1 */
 .projects-content-text h1 p {
     margin-left: 30px;
 }
+/* Ajustar la sección 2 */
 .projects-content-s2 {
     color: black;
     font-size: 20px;
@@ -434,19 +458,23 @@ p {
 }
 
 /* SECCIÓN CONTENIDO (SOCIAL) */ /* SECCIÓN CONTENIDO (SOCIAL) */ /* SECCIÓN CONTENIDO (SOCIAL) */
+/* Dividir la sección de contenido en 2 columnas */
 .social-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 30px;
 }
+/* Centrar el contenido de la sección 1 */
 .social-content-s1 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+/* Flexionar el contenido de la sección 1 en la lista 'ul' */
 .social-content-s1 ul {
     display: flex;
 }
+/* Ajustar la línea lateral de la sección 1 */
 .social-content-line {
     width: 5px;
     height: 170px;
@@ -456,6 +484,7 @@ p {
     margin-right: 30px;
     margin-bottom: 10px;
 }
+/* Ajustar el texto 'h1' de la sección 1 (ubicarlo en la parte superior de la sección y centrado) */
 .social-content-text h1 {
     color: black;
     display: flex;
@@ -463,15 +492,18 @@ p {
     justify-content: left;
     margin-bottom: 30px;
 }
+/* Ajustar el texto 'p' de la sección 1 (ubicarlo en la parte inferior de la sección y centrado) */
 .social-content-text p {
     color: black;
     display: flex;
     align-items: inherit;
     justify-content: left;
 }
+/* Aplicar márgenes a los textos 'h1' y 'p' de la sección 1 */
 .social-content-text h1 p {
     margin-left: 30px;
 }
+/* Ajustar la sección 2 */
 .social-content-s2 {
     color: black;
     font-size: 20px;
