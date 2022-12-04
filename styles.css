@@ -114,7 +114,7 @@ hr {
 /* Crear columnas y aplicar espaciado */
 .cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 /* Edición del tamaño de las imágenes */
@@ -182,123 +182,6 @@ hr {
     color: white;
     font-size: 2.5rem;
     margin-bottom: 20px;
-}
-
-/* OPTIMIZACIÓN PARA VISUALIZACIÓN EN CELULARES */
-/* Ajuste de la pantalla para visualización en celulares con ancho de menos de 800 píxeles */
-@media (max-width: 800px) {
-    .nav-main{
-        padding: 20px;
-    }
-    .banner{
-        margin-bottom: 25px;
-    }
-    .cards{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .cards h3{
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    .cards p{
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    .cards a{
-        margin-top: 0px;
-        margin-bottom: 15px;
-    }
-    .social {
-        color: white;
-        background: black;
-        margin-top: 30px;
-        margin-bottom: 20px;
-        margin-left: 38px;
-        margin-right: 38px;
-    }
-}
-
-/* Ajuste de la pantalla para visualización en celulares con ancho de menos de 500 píxeles */
-@media (max-width: 550px) {
-    .nav-main{
-        padding: 0px;
-    }
-    .banner{
-        margin-bottom: 50px;
-    }
-    .cards{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .cards h3{
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    .cards p{
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    .cards a{
-        margin-top: 0px;
-        margin-bottom: 30px;
-    }
-    .social {
-        color: white;
-        background: black;
-        margin-top: 30px;
-        margin-bottom: 20px;
-        margin-left: 25.5px;
-        margin-right: 25.5px;
-    }
-}
-
-/* ANIMACIONES */ /* ANIMACIONES */ /* ANIMACIONES */
-/* Animaciones para la sección 'top-banner' */
-.top-banner
-h1 {
-    animation-duration: 2s;
-    animation-name: slidein;
-}
-    @keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 300%
-    }
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
-}
-/* Animaciones para la sección 'nav-menu' */
-.nav-menu
-a {
-    animation-duration: 3s;
-    animation-name: slidein;
-}
-    @keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 300%
-    }
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
-}
-/* Animaciones para la sección 'social' */
-.social
-p {
-    animation-duration: 2.5s;
-    animation-name: slidein;
-}
-    @keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 300%
-    }
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
 }
 
 /* SECCIÓN CONTENIDO */ /* SECCIÓN CONTENIDO */ /* SECCIÓN CONTENIDO */
@@ -509,4 +392,121 @@ p {
     font-size: 20px;
     margin-top: 30px;
     margin-bottom: 70px;
+}
+
+/* ANIMACIONES */ /* ANIMACIONES */ /* ANIMACIONES */
+/* Animaciones para la sección 'top-banner' */
+.top-banner
+h1 {
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+    @keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+/* Animaciones para la sección 'nav-menu' */
+.nav-menu
+a {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+    @keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+/* Animaciones para la sección 'social' */
+.social
+p {
+    animation-duration: 2.5s;
+    animation-name: slidein;
+}
+    @keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+/* OPTIMIZACIÓN PARA VISUALIZACIÓN EN CELULARES */
+/* Ajuste de la pantalla para visualización en celulares con ancho de menos de 800 píxeles */
+@media (max-width: 800px) {
+    .nav-main{
+        padding: 20px;
+    }
+    .banner{
+        margin-bottom: 25px;
+    }
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cards h3{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .cards p{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .cards a{
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+    .social {
+        color: white;
+        background: black;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: 38px;
+        margin-right: 38px;
+    }
+}
+
+/* Ajuste de la pantalla para visualización en celulares con ancho de menos de 500 píxeles */
+@media (max-width: 550px) {
+    .nav-main{
+        padding: 0px;
+    }
+    .banner{
+        margin-bottom: 50px;
+    }
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .cards h3{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .cards p{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .cards a{
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+    .social {
+        color: white;
+        background: black;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: 25.5px;
+        margin-right: 25.5px;
+    }
 }
