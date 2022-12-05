@@ -116,12 +116,16 @@ hr {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
+    margin-bottom: 50px;
 }
 /* Edición del tamaño de las imágenes */
 .cards img {
     width: 100%;
     height: 210px;
     margin-bottom: 10px;
+}
+.cards-text {
+    background-color: blanchedalmond;
 }
 /* Edición del del texto h3 */
 .cards h3 {
@@ -316,7 +320,7 @@ hr {
     display: flex;
     align-items: initial;
     justify-content: left;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 /* Ajustar el texto 'p' de la sección 1 (ubicarlo en la parte inferior de la sección y centrado) */
 .projects-content-text p {
@@ -334,7 +338,7 @@ hr {
     color: black;
     font-size: 20px;
     margin-top: 30px;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 /* SECCIÓN CONTENIDO (SOCIAL) */ /* SECCIÓN CONTENIDO (SOCIAL) */ /* SECCIÓN CONTENIDO (SOCIAL) */
