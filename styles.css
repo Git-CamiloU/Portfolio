@@ -234,7 +234,7 @@ hr {
 .studies-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 30px;
+    margin: 110px 0;
 }
 /* Centrar el contenido de la sección 1 */
 .studies-content-s1 {
@@ -316,7 +316,7 @@ hr {
     display: flex;
     align-items: initial;
     justify-content: left;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 /* Ajustar el texto 'p' de la sección 1 (ubicarlo en la parte inferior de la sección y centrado) */
 .projects-content-text p {
