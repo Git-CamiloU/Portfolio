@@ -65,9 +65,18 @@ a {
     padding: 40px;
 }
 /* Estilizar botones del panel de navegación para que muestren una animación al pasar sobre ellos */
-.nav-main ul li a:hover {
-    border-bottom: 2px solid white;
+.underline-hover::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: white;
+    display: block;
+    transition: all 300ms;
 }
+.underline-hover:hover::after {
+    width: 100%;
+}
+
 /* Aplicar márgenes a la barra separadora que está entre la barra de navegación y el banner */
 hr {
     margin: 10px 0px;
@@ -393,56 +402,6 @@ hr {
     font-size: 20px;
     margin-top: 30px;
     margin-bottom: 70px;
-}
-
-/* ANIMACIONES */ /* ANIMACIONES */ /* ANIMACIONES */
-/* Animaciones para la sección 'top-banner' */
-.top-banner
-h1 {
-    animation-duration: 2s;
-    animation-name: slidein;
-}
-    @keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 300%
-    }
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
-}
-/* Animaciones para la sección 'nav-menu' */
-.nav-menu
-a {
-    animation-duration: 3s;
-    animation-name: slidein;
-}
-    @keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 300%
-    }
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
-}
-/* Animaciones para la sección 'social' */
-.social
-p {
-    animation-duration: 2.5s;
-    animation-name: slidein;
-}
-    @keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 300%
-    }
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
 }
 
 /* OPTIMIZACIÓN PARA VISUALIZACIÓN EN CELULARES */
